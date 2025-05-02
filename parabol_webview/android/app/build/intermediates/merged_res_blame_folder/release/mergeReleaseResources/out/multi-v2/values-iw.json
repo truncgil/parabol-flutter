@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.parabol_webview.app-mergeReleaseResources-27:/values-iw/values-iw.xml",
+            "outputFile": "com.truncgil.parabol.app-mergeReleaseResources-28:/values-iw/values-iw.xml",
             "map": [
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/1366937548e71f10a22c30a2f508e1c6/transformed/browser-1.8.0/res/values-iw/values-iw.xml",
@@ -13,11 +13,11 @@
                         "endOffsets": "141,241,347,449"
                     },
                     "to": {
-                        "startLines": "9,10,11,12",
+                        "startLines": "10,11,12,13",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "752,843,943,1049",
+                        "startOffsets": "870,961,1061,1167",
                         "endColumns": "90,99,105,101",
-                        "endOffsets": "838,938,1044,1146"
+                        "endOffsets": "956,1056,1162,1264"
                     }
                 },
                 {
@@ -30,11 +30,28 @@
                         "endOffsets": "144,246,343,440,541,641,747,848"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startLines": "2,3,4,5,6,7,8,14",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,149,251,348,445,546,646,1151",
+                        "startOffsets": "55,149,251,348,445,546,646,1269",
                         "endColumns": "93,101,96,96,100,99,105,100",
-                        "endOffsets": "144,246,343,440,541,641,747,1247"
+                        "endOffsets": "144,246,343,440,541,641,747,1365"
+                    }
+                },
+                {
+                    "source": "/Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/res/values-iw/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "113",
+                        "endOffsets": "308"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "752",
+                        "endColumns": "117",
+                        "endOffsets": "865"
                     }
                 }
             ]

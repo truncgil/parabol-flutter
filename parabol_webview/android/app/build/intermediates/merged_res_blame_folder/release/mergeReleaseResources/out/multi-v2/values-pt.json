@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.parabol_webview.app-mergeReleaseResources-27:/values-pt/values-pt.xml",
+            "outputFile": "com.truncgil.parabol.app-mergeReleaseResources-28:/values-pt/values-pt.xml",
             "map": [
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/1366937548e71f10a22c30a2f508e1c6/transformed/browser-1.8.0/res/values-pt/values-pt.xml",

@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.parabol_webview.app-mergeReleaseResources-27:/values-et/values-et.xml",
+            "outputFile": "com.truncgil.parabol.app-mergeReleaseResources-28:/values-et/values-et.xml",
             "map": [
+                {
+                    "source": "/Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/res/values-et/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "135",
+                        "endOffsets": "330"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "784",
+                        "endColumns": "139",
+                        "endOffsets": "919"
+                    }
+                },
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/res/values-et/values-et.xml",
                     "from": {
@@ -13,11 +30,11 @@
                         "endOffsets": "145,247,345,448,554,659,779,880"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startLines": "2,3,4,5,6,7,8,14",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,252,350,453,559,664,1190",
+                        "startOffsets": "55,150,252,350,453,559,664,1330",
                         "endColumns": "94,101,97,102,105,104,119,100",
-                        "endOffsets": "145,247,345,448,554,659,779,1286"
+                        "endOffsets": "145,247,345,448,554,659,779,1426"
                     }
                 },
                 {
@@ -30,11 +47,11 @@
                         "endOffsets": "150,250,357,456"
                     },
                     "to": {
-                        "startLines": "9,10,11,12",
+                        "startLines": "10,11,12,13",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "784,884,984,1091",
+                        "startOffsets": "924,1024,1124,1231",
                         "endColumns": "99,99,106,98",
-                        "endOffsets": "879,979,1086,1185"
+                        "endOffsets": "1019,1119,1226,1325"
                     }
                 }
             ]

@@ -3,11 +3,8 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
--keep class com.example.parabol_webview.MainActivity { <init>(); }
--keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
--keep class com.google.android.play.core.assetpacks.ExtractionForegroundService { <init>(); }
 -keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
--keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
+-keep class com.truncgil.parabol.MainActivity { <init>(); }
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -130,6 +127,7 @@
 -keep class io.flutter.view.** { *; }
 -keep class io.flutter.** { *; }
 -keep class io.flutter.plugins.** { *; }
+-keep class io.flutter.embedding.** { *; }
 -keep class io.flutter.plugin.webview.** { *; }
 
 # WebView
@@ -140,10 +138,12 @@
     <methods>;
 }
 
-# Play Core
--keep class com.google.android.play.core.splitcompat.** { *; }
--keep class com.google.android.play.core.splitinstall.** { *; }
--keep class com.google.android.play.core.tasks.** { *; }
+# Play Core KTX
+-keep class com.google.android.play.core.** { *; }
+-keep class * extends com.google.android.play.core.** { *; }
+-dontwarn com.google.android.play.core.**
+-keep class kotlin.** { *; }
+-keep class kotlinx.** { *; }
 
 # Keep common dependencies
 -keep class androidx.annotation.Keep
@@ -174,7 +174,13 @@
     private void readObject(java.io.ObjectInputStream);
     java.lang.Object writeReplace();
     java.lang.Object readResolve();
-} 
+}
+
+# Keep R8 rules
+-keepattributes SourceFile,LineNumberTable
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes Exceptions 
 # End of content from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/proguard-rules.pro
 # The proguard configuration file for the following section is /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/default_proguard_files/global/proguard-android.txt-8.7.0
 # This is a configuration file for ProGuard.
@@ -274,6 +280,96 @@
 -dontnote java.lang.invoke.**
 
 # End of content from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/default_proguard_files/global/proguard-android.txt-8.7.0
+# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/2b6b978418e938dbfd0e699175279d9e/transformed/jetified-app-update-ktx-2.1.0/proguard.txt
+# Proguard cannot process META-INF/versions/9.
+# See https://discuss.gradle.org/t/meta-inf-version-duplicate-error-when-using-proguard/31380
+-dontwarn module-info
+
+# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/2b6b978418e938dbfd0e699175279d9e/transformed/jetified-app-update-ktx-2.1.0/proguard.txt
+# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/bc023ba67908634cc757a44ac9c35a9c/transformed/jetified-review-ktx-2.0.1/proguard.txt
+# Proguard cannot process META-INF/versions/9.
+# See https://discuss.gradle.org/t/meta-inf-version-duplicate-error-when-using-proguard/31380
+-dontwarn module-info
+
+# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/bc023ba67908634cc757a44ac9c35a9c/transformed/jetified-review-ktx-2.0.1/proguard.txt
+# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/cf1273b2f31653c392eb1b3223a06112/transformed/jetified-play-services-tasks-18.0.2/proguard.txt
+
+
+# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/cf1273b2f31653c392eb1b3223a06112/transformed/jetified-play-services-tasks-18.0.2/proguard.txt
+# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/proguard.txt
+# Needed when building against pre-Marshmallow SDK.
+-dontwarn android.security.NetworkSecurityPolicy
+
+# Needed when building against Marshmallow SDK.
+-dontwarn android.app.Notification
+
+# Protobuf has references not on the Android boot classpath
+-dontwarn sun.misc.Unsafe
+-dontwarn libcore.io.Memory
+
+# Internal Google annotations for generating Proguard keep rules.
+-dontwarn com.google.android.apps.common.proguard.UsedBy*
+
+# Annotations referenced by the SDK but whose definitions are contained in
+# non-required dependencies.
+-dontwarn javax.annotation.**
+-dontwarn org.checkerframework.**
+-dontwarn com.google.errorprone.annotations.**
+-dontwarn org.jspecify.nullness.NullMarked
+
+# Proguard flags for consumers of the Google Play services SDK
+# https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project
+
+# Keep SafeParcelable NULL value, needed for reflection by DowngradeableSafeParcel
+-keepclassmembers public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+# Needed for Parcelable/SafeParcelable classes & their creators to not get renamed, as they are
+# found via reflection.
+-keep class com.google.android.gms.common.internal.ReflectedParcelable
+-keepnames class * implements com.google.android.gms.common.internal.ReflectedParcelable
+-keepclassmembers class * implements android.os.Parcelable {
+  public static final *** CREATOR;
+}
+
+# Keep the classes/members we need for client functionality.
+-keep @interface android.support.annotation.Keep
+-keep @androidx.annotation.Keep class *
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <fields>;
+}
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <methods>;
+}
+
+# Keep androidX equivalent of above android.support to allow Jetification.
+-keep @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class *
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <fields>;
+}
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <methods>;
+}
+
+# Keep the names of classes/members we need for client functionality.
+-keep @interface com.google.android.gms.common.annotation.KeepName
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+  @com.google.android.gms.common.annotation.KeepName *;
+}
+
+# Keep Dynamite API entry points
+-keep @interface com.google.android.gms.common.util.DynamiteApi
+-keep @com.google.android.gms.common.util.DynamiteApi public class * {
+  public <fields>;
+  public <methods>;
+}
+
+
+
+# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/proguard.txt
 # The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/d18d49e4f583310aa19b942507c4d253/transformed/webkit-1.12.1/proguard.txt
 # Copyright 2018 The Chromium Authors
 # Use of this source code is governed by a BSD-style license that can be
@@ -379,6 +475,10 @@
 }
 
 # End of content from /Users/umittunc/.gradle/caches/8.9/transforms/3b2394c622cff9ee30415248ccb1f374/transformed/lifecycle-viewmodel-2.7.0/proguard.txt
+# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/proguard.txt
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+-keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
+# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/proguard.txt
 # The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/156a3dea28028be79998a3b234765f6c/transformed/jetified-savedstate-1.2.1/proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
@@ -421,10 +521,6 @@
 # Also this rule prevents registerIn from being inlined.
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
 # End of content from /Users/umittunc/.gradle/caches/8.9/transforms/4b2df635357dec44ce780abf03a155ea/transformed/lifecycle-runtime-2.7.0/proguard.txt
-# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/proguard.txt
-# this rule is need to work properly when app is compiled with api 28, see b/142778206
--keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
-# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/proguard.txt
 # The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/d17f136ff229d11867cee700d3db7260/transformed/jetified-lifecycle-viewmodel-savedstate-2.7.0/proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>(androidx.lifecycle.SavedStateHandle);
@@ -577,10 +673,6 @@
 # An annotation used for build tooling, won't be directly accessed.
 -dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
 # End of content from /Users/umittunc/.gradle/caches/8.9/transforms/18d3e87e39050b5588b5004dcc83aebe/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
-# The proguard configuration file for the following section is /Users/umittunc/.gradle/caches/8.9/transforms/85116d0960372bfbd2d62dda02a8403b/transformed/jetified-core-1.10.3/proguard.txt
--keepnames class com.google.android.play.core.review.ReviewInfo
-
-# End of content from /Users/umittunc/.gradle/caches/8.9/transforms/85116d0960372bfbd2d62dda02a8403b/transformed/jetified-core-1.10.3/proguard.txt
 # The proguard configuration file for the following section is <unknown>
 
 # End of content from <unknown>

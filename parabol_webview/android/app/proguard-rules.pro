@@ -5,6 +5,7 @@
 -keep class io.flutter.view.** { *; }
 -keep class io.flutter.** { *; }
 -keep class io.flutter.plugins.** { *; }
+-keep class io.flutter.embedding.** { *; }
 -keep class io.flutter.plugin.webview.** { *; }
 
 # WebView
@@ -15,10 +16,12 @@
     <methods>;
 }
 
-# Play Core
--keep class com.google.android.play.core.splitcompat.** { *; }
--keep class com.google.android.play.core.splitinstall.** { *; }
--keep class com.google.android.play.core.tasks.** { *; }
+# Play Core KTX
+-keep class com.google.android.play.core.** { *; }
+-keep class * extends com.google.android.play.core.** { *; }
+-dontwarn com.google.android.play.core.**
+-keep class kotlin.** { *; }
+-keep class kotlinx.** { *; }
 
 # Keep common dependencies
 -keep class androidx.annotation.Keep
@@ -49,4 +52,10 @@
     private void readObject(java.io.ObjectInputStream);
     java.lang.Object writeReplace();
     java.lang.Object readResolve();
-} 
+}
+
+# Keep R8 rules
+-keepattributes SourceFile,LineNumberTable
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes Exceptions 

@@ -16,10 +16,12 @@
     <methods>;
 }
 
-# Play Core
+# Play Core KTX
 -keep class com.google.android.play.core.** { *; }
 -keep class * extends com.google.android.play.core.** { *; }
 -dontwarn com.google.android.play.core.**
+-keep class kotlin.** { *; }
+-keep class kotlinx.** { *; }
 
 # Keep common dependencies
 -keep class androidx.annotation.Keep

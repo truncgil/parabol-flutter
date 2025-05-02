@@ -13,4 +13,40 @@
 -keep class * extends android.webkit.WebViewClient { *; }
 -keepclassmembers class * extends android.webkit.WebViewClient {
     <methods>;
+}
+
+# Play Core
+-keep class com.google.android.play.core.splitcompat.** { *; }
+-keep class com.google.android.play.core.splitinstall.** { *; }
+-keep class com.google.android.play.core.tasks.** { *; }
+
+# Keep common dependencies
+-keep class androidx.annotation.Keep
+
+# Keep entry points
+-keep class * extends android.app.Application { *; }
+-keep class * extends android.app.Activity { *; }
+-keep class * extends android.app.Service { *; }
+-keep class * extends android.content.BroadcastReceiver { *; }
+-keep class * extends android.content.ContentProvider { *; }
+
+# Keep native methods
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+# Keep Parcelables
+-keepclassmembers class * implements android.os.Parcelable {
+    static ** CREATOR;
+}
+
+# Keep Serializable classes
+-keepclassmembers class * implements java.io.Serializable {
+    static final long serialVersionUID;
+    private static final java.io.ObjectStreamField[] serialPersistentFields;
+    !static !transient <fields>;
+    private void writeObject(java.io.ObjectOutputStream);
+    private void readObject(java.io.ObjectInputStream);
+    java.lang.Object writeReplace();
+    java.lang.Object readResolve();
 } 

@@ -1,0 +1,4 @@
+#Fri May 02 08:37:55 TRT 2025
+base.0=/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

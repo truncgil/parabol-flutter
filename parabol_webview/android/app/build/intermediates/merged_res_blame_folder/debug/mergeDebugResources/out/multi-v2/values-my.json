@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.parabol_webview.app-mergeDebugResources-26:/values-my/values-my.xml",
+            "outputFile": "com.example.parabol_webview.app-mergeDebugResources-27:/values-my/values-my.xml",
             "map": [
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/res/values-my/values-my.xml",

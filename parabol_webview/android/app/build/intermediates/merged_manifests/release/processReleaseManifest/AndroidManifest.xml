@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.parabol_webview"
+    package="com.truncgil.parabol"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
@@ -26,12 +26,10 @@
     </queries>
 
     <permission
-        android:name="com.example.parabol_webview.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.truncgil.parabol.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.parabol_webview.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Permission will be merged into the manifest of the hosting app. -->
-    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.truncgil.parabol.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="android.app.Application"
@@ -41,7 +39,7 @@
         android:label="Parabol"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.parabol_webview.MainActivity"
+            android:name="com.truncgil.parabol.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -79,6 +77,10 @@
             android:exported="false"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <uses-library
             android:name="androidx.window.extensions"
             android:required="false" />
@@ -88,7 +90,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.parabol_webview.androidx-startup"
+            android:authorities="com.truncgil.parabol.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
@@ -118,29 +120,10 @@
             </intent-filter>
         </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
         <activity
-            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-            android:enabled="false"
-            android:exported="false"
-            android:launchMode="singleInstance"
-            android:process=":playcore_missing_splits_activity"
-            android:stateNotNeeded="true" />
-        <activity
             android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
             android:exported="false"
             android:stateNotNeeded="true"
-            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
-        <service
-            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-            android:enabled="false"
-            android:exported="true" >
-            <meta-data
-                android:name="com.google.android.play.core.assetpacks.versionCode"
-                android:value="11003" />
-        </service>
-        <service
-            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
-            android:enabled="false"
-            android:exported="false" />
+            android:theme="@style/Theme.PlayCore.Transparent" />
     </application>
 
 </manifest>

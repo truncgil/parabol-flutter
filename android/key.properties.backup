@@ -1,0 +1,4 @@
+storePassword=parabol123
+keyPassword=parabol123
+keyAlias=upload
+storeFile=upload-keystore.jks 

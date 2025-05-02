@@ -1,0 +1,38 @@
+name: parabol_webview
+description: Parabol uygulaması için WebView uygulaması.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  webview_flutter: ^4.4.2  # Android ve iOS için WebView
+  cupertino_icons: ^1.0.6
+  url_launcher: ^6.2.2     # Harici URL'leri açmak için
+  flutter_spinkit: ^5.2.0  # Şık loading animasyonları
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1  # Uygulama ikonu için
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/icon-512x512.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon-512x512.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/icon-512x512.png"
+  
+  # Uygulamanın logosunu ve diğer varlıkları buraya ekleyin
+  # assets:
+  #   - assets/images/logo.png 

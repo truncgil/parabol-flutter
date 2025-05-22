@@ -1,7 +1,7 @@
 name: parabol_webview
 description: Parabol uygulaması için WebView uygulaması.
 publish_to: 'none'
-version: 1.0.2+3
+version: 1.0.3+4
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
@@ -9,17 +9,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  webview_flutter: ^4.2.2  # Android ve iOS için WebView
+  webview_flutter: ^4.4.2  # Android ve iOS için WebView
   cupertino_icons: ^1.0.6
-  url_launcher: ^6.1.14     # Harici URL'leri açmak için
+  url_launcher: ^6.2.4     # Harici URL'leri açmak için
   flutter_spinkit: ^5.2.0  # Şık loading animasyonları
-  connectivity_plus: ^5.0.2  # İnternet bağlantısı kontrolü için
+  connectivity_plus: ^6.1.4  # İnternet bağlantısı kontrolü için
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
-  flutter_launcher_icons: ^0.13.1  # Uygulama ikonu için
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3  # Uygulama ikonu için
 
 flutter:
   uses-material-design: true

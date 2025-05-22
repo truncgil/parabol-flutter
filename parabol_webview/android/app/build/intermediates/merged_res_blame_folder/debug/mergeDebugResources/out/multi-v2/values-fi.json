@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.truncgil.parabol.app-mergeDebugResources-27:/values-fi/values-fi.xml",
+            "outputFile": "com.truncgil.parabol.app-mergeDebugResources-28:/values-fi/values-fi.xml",
             "map": [
+                {
+                    "source": "/Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/res/values-fi/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "145",
+                        "endOffsets": "340"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "789",
+                        "endColumns": "149",
+                        "endOffsets": "934"
+                    }
+                },
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/res/values-fi/values-fi.xml",
                     "from": {
@@ -13,11 +30,11 @@
                         "endOffsets": "146,248,346,451,556,668,784,885"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startLines": "2,3,4,5,6,7,8,14",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,151,253,351,456,561,673,1201",
+                        "startOffsets": "55,151,253,351,456,561,673,1351",
                         "endColumns": "95,101,97,104,104,111,115,100",
-                        "endOffsets": "146,248,346,451,556,668,784,1297"
+                        "endOffsets": "146,248,346,451,556,668,784,1447"
                     }
                 },
                 {
@@ -30,11 +47,11 @@
                         "endOffsets": "153,254,363,462"
                     },
                     "to": {
-                        "startLines": "9,10,11,12",
+                        "startLines": "10,11,12,13",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "789,892,993,1102",
+                        "startOffsets": "939,1042,1143,1252",
                         "endColumns": "102,100,108,98",
-                        "endOffsets": "887,988,1097,1196"
+                        "endOffsets": "1037,1138,1247,1346"
                     }
                 }
             ]

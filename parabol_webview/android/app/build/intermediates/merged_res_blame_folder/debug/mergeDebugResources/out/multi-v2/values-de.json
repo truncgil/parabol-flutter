@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.truncgil.parabol.app-mergeDebugResources-27:/values-de/values-de.xml",
+            "outputFile": "com.truncgil.parabol.app-mergeDebugResources-28:/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/umittunc/.gradle/caches/8.9/transforms/1366937548e71f10a22c30a2f508e1c6/transformed/browser-1.8.0/res/values-de/values-de.xml",
@@ -13,11 +13,11 @@
                         "endOffsets": "154,255,366,466"
                     },
                     "to": {
-                        "startLines": "9,10,11,12",
+                        "startLines": "10,11,12,13",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "786,890,991,1102",
+                        "startOffsets": "931,1035,1136,1247",
                         "endColumns": "103,100,110,99",
-                        "endOffsets": "885,986,1097,1197"
+                        "endOffsets": "1030,1131,1242,1342"
                     }
                 },
                 {
@@ -30,11 +30,28 @@
                         "endOffsets": "148,250,350,450,558,663,781,882"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,13",
+                        "startLines": "2,3,4,5,6,7,8,14",
                         "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,153,255,355,455,563,668,1202",
+                        "startOffsets": "55,153,255,355,455,563,668,1347",
                         "endColumns": "97,101,99,99,107,104,117,100",
-                        "endOffsets": "148,250,350,450,558,663,781,1298"
+                        "endOffsets": "148,250,350,450,558,663,781,1443"
+                    }
+                },
+                {
+                    "source": "/Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/res/values-de/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "140",
+                        "endOffsets": "335"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "786",
+                        "endColumns": "144",
+                        "endOffsets": "926"
                     }
                 }
             ]

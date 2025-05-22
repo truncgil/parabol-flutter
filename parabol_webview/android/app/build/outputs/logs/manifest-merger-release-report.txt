@@ -1,7 +1,7 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:7:5-39:19
-INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:7:5-39:19
+INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:8:5-40:19
+INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:8:5-40:19
 MERGED from [com.google.android.play:app-update-ktx:2.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/2b6b978418e938dbfd0e699175279d9e/transformed/jetified-app-update-ktx-2.1.0/AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.play:app-update-ktx:2.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/2b6b978418e938dbfd0e699175279d9e/transformed/jetified-app-update-ktx-2.1.0/AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.play:review-ktx:2.0.1] /Users/umittunc/.gradle/caches/8.9/transforms/bc023ba67908634cc757a44ac9c35a9c/transformed/jetified-review-ktx-2.0.1/AndroidManifest.xml:11:5-12:19
@@ -35,19 +35,19 @@ MERGED from [com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:8:9-32
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:9:9-32
 	android:icon
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:11:9-43
 	android:usesCleartextTraffic
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:11:9-44
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:12:9-44
 	android:name
 		INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:9:9-42
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:10:9-42
 manifest
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-51:12
-INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-51:12
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [:webview_flutter_android] /Users/umittunc/.pub-cache/hosted/pub.dev/webview_flutter_android-4.4.2/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.play:app-update-ktx:2.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/2b6b978418e938dbfd0e699175279d9e/transformed/jetified-app-update-ktx-2.1.0/AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.play:review-ktx:2.0.1] /Users/umittunc/.gradle/caches/8.9/transforms/bc023ba67908634cc757a44ac9c35a9c/transformed/jetified-review-ktx-2.0.1/AndroidManifest.xml:2:1-14:12
@@ -86,6 +86,7 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/umittunc/
 MERGED from [com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:2:1-21:12
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/umittunc/.gradle/caches/8.9/transforms/36d84a3f95acfe85db46b2fa36f076ce/transformed/jetified-relinker-1.4.5/AndroidManifest.xml:2:1-7:12
 	package
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:3:5-35
 		INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml
@@ -94,65 +95,65 @@ MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] /Users/umittunc/.gradle/ca
 	xmlns:android
 		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:5-66
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-66
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-78
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:5-78
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:22-76
 queries
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:45:5-50:15
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:5-51:15
 intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:9-49:18
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:9-50:18
 action#android.intent.action.PROCESS_TEXT
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:13-72
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-72
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:21-70
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:21-70
 data
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-50
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:13-50
 	android:mimeType
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:19-48
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:19-48
 activity#com.truncgil.parabol.MainActivity
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:12:9-33:20
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:13:9-34:20
 	android:launchMode
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:15:13-43
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:16:13-43
 	android:hardwareAccelerated
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:19:13-47
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:20:13-47
 	android:windowSoftInputMode
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:20:13-55
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:21:13-55
 	android:exported
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:14:13-36
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:15:13-36
 	android:configChanges
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:18:13-163
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:19:13-163
 	android:theme
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:17:13-47
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:18:13-47
 	android:taskAffinity
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:17:13-36
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:13:13-41
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:14:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:25:13-28:17
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:26:13-29:17
 	android:resource
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:27:15-52
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:28:15-52
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:26:15-70
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:27:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:29:13-32:29
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:17-68
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:17-68
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:17-76
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:32:17-76
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:32:27-74
 meta-data#flutterEmbedding
-ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:36:9-38:33
+ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:37:9-39:33
 	android:value
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:38:13-30
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:39:13-30
 	android:name
-		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:37:13-44
+		ADDED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:38:13-44
 uses-sdk
 INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml

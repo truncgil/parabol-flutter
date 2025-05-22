@@ -26,9 +26,8 @@ com.truncgil.parabol.app-release-24 /Users/umittunc/.pub-cache/hosted/pub.dev/ur
 com.truncgil.parabol.app-release-25 /Users/umittunc/.pub-cache/hosted/pub.dev/webview_flutter_android-4.4.2/android/build/intermediates/packaged_res/release/packageReleaseResources
 com.truncgil.parabol.app-pngs-26 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/generated/res/pngs/release
 com.truncgil.parabol.app-resValues-27 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/generated/res/resValues/release
-com.truncgil.parabol.app-packageReleaseResources-28 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
-com.truncgil.parabol.app-packageReleaseResources-29 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
-com.truncgil.parabol.app-merged-not-compiled-resources-30 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/merged-not-compiled-resources/release
-com.truncgil.parabol.app-release-31 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/merged_res/release/mergeReleaseResources
-com.truncgil.parabol.app-main-32 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/res
-com.truncgil.parabol.app-release-33 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/release/res
+com.truncgil.parabol.app-mergeReleaseResources-28 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.truncgil.parabol.app-mergeReleaseResources-29 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.truncgil.parabol.app-release-30 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.truncgil.parabol.app-main-31 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/res
+com.truncgil.parabol.app-release-32 /Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/release/res

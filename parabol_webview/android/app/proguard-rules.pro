@@ -8,6 +8,9 @@
 -keep class io.flutter.embedding.** { *; }
 -keep class io.flutter.plugin.webview.** { *; }
 
+# Keep MainActivity
+-keep class com.truncgil.parabol.MainActivity { *; }
+
 # WebView
 -keep class android.webkit.WebView { *; }
 -keep class android.webkit.WebViewClient { *; }
@@ -58,4 +61,21 @@
 -keepattributes SourceFile,LineNumberTable
 -keepattributes *Annotation*
 -keepattributes Signature
--keepattributes Exceptions 
+-keepattributes Exceptions
+
+# Additional WebView rules
+-keepclassmembers class * extends android.webkit.WebChromeClient {
+    <methods>;
+}
+-keepclassmembers class * extends android.webkit.WebResourceRequest {
+    <methods>;
+}
+
+# Flutter WebView Plugin specific rules
+-keep class io.flutter.plugins.webviewflutter.** { *; }
+-keep class io.flutter.plugins.urllauncher.** { *; }
+
+# Keep JavaScript Interface
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+} 

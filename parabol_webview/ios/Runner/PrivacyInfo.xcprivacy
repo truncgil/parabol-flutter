@@ -1,0 +1,22 @@
+{
+    "NSPrivacyAccessedAPITypes": [
+        {
+            "NSPrivacyAccessedAPIType": "NSUserDefaults",
+            "NSPrivacyAccessedAPITypeReasons": ["C617.1"]
+        },
+        {
+            "NSPrivacyAccessedAPIType": "NSLocalNetworkUsageDescription",
+            "NSPrivacyAccessedAPITypeReasons": ["C617.1"]
+        },
+        {
+            "NSPrivacyAccessedAPIType": "NSURLRequest",
+            "NSPrivacyAccessedAPITypeReasons": ["C617.1"]
+        },
+        {
+            "NSPrivacyAccessedAPIType": "NSHTTPCookieStorage",
+            "NSPrivacyAccessedAPITypeReasons": ["C617.1"]
+        }
+    ],
+    "NSPrivacyTracking": false,
+    "NSPrivacyTrackingDomains": []
+} 

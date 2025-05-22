@@ -6,18 +6,18 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-9        android:targetSdkVersion="34" />
+9        android:targetSdkVersion="35" />
 10    <!--
 11         The INTERNET permission is required for development. Specifically,
 12         the Flutter tool needs it to communicate with the running application
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:5-66
-15-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:22-64
+15-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-66
+15-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-78
-16-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-76
+16-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:5-78
+16-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:22-76
 17    <!--
 18 Required to query activities that can process text, see:
 19         https://developer.android.com/training/package-visibility and
@@ -26,16 +26,16 @@
 22         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 23    -->
 24    <queries>
-24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:45:5-50:15
+24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:5-51:15
 25        <intent>
-25-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:9-49:18
+25-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:9-50:18
 26            <action android:name="android.intent.action.PROCESS_TEXT" />
-26-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:13-72
-26-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:21-70
+26-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-72
+26-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:21-70
 27
 28            <data android:mimeType="text/plain" />
-28-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-50
-28-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:19-48
+28-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:13-50
+28-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:19-48
 29        </intent>
 30    </queries>
 31
@@ -46,172 +46,151 @@
 34        android:protectionLevel="signature" />
 34-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
 35
-36    <uses-permission android:name="com.truncgil.parabol.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+36    <uses-permission android:name="com.truncgil.parabol.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 36-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
 36-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
-37    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
-38    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-38-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:8:3-74
-38-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:8:20-72
-39
-40    <application
-41        android:name="android.app.Application"
-42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-42-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
-43        android:debuggable="true"
-44        android:extractNativeLibs="true"
-45        android:icon="@mipmap/ic_launcher"
-46        android:label="Parabol"
-47        android:usesCleartextTraffic="true" >
-48        <activity
-49            android:name="com.truncgil.parabol.MainActivity"
-50            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-51            android:exported="true"
-52            android:hardwareAccelerated="true"
-53            android:launchMode="singleTop"
-54            android:taskAffinity=""
-55            android:theme="@style/LaunchTheme"
-56            android:windowSoftInputMode="adjustResize" >
-57
-58            <!--
-59                 Specifies an Android theme to apply to this Activity as soon as
-60                 the Android process has started. This theme is visible to the user
-61                 while the Flutter UI initializes. After that, this theme continues
-62                 to determine the Window background behind the Flutter UI.
-63            -->
-64            <meta-data
-65                android:name="io.flutter.embedding.android.NormalTheme"
-66                android:resource="@style/NormalTheme" />
-67
-68            <intent-filter>
-69                <action android:name="android.intent.action.MAIN" />
-70
-71                <category android:name="android.intent.category.LAUNCHER" />
-72            </intent-filter>
-73        </activity>
-74        <!--
-75             Don't delete the meta-data below.
-76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-77        -->
-78        <meta-data
-79            android:name="flutterEmbedding"
-80            android:value="2" />
-81
-82        <activity
-82-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-11:74
-83            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-83-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-74
-84            android:exported="false"
-84-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-37
-85            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-85-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-71
-86
-87        <uses-library
-87-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
-88            android:name="androidx.window.extensions"
-88-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
-89            android:required="false" />
-89-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
-90        <uses-library
-90-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
-91            android:name="androidx.window.sidecar"
-91-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
-92            android:required="false" />
-92-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
-93
-94        <provider
-94-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-95            android:name="androidx.startup.InitializationProvider"
-95-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
-96            android:authorities="com.truncgil.parabol.androidx-startup"
-96-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
-97            android:exported="false" >
-97-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
-98            <meta-data
-98-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-99                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-99-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-100                android:value="androidx.startup" />
-100-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-101            <meta-data
-101-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-102                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-102-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-103                android:value="androidx.startup" />
-103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-104        </provider>
-105
-106        <receiver
-106-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-107            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-107-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-108            android:directBootAware="false"
-108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-109            android:enabled="true"
-109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-110            android:exported="true"
-110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-111            android:permission="android.permission.DUMP" >
-111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
-112            <intent-filter>
-112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-113                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
-114            </intent-filter>
-115            <intent-filter>
-115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-116                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-116-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
-117            </intent-filter>
-118            <intent-filter>
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-119                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-120            </intent-filter>
-121            <intent-filter>
-121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-122                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-122-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-123            </intent-filter>
-124        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
-125        <activity
-125-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:5-271
-126            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
-126-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:15-102
-127            android:enabled="false"
-127-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:103-126
-128            android:exported="false"
-128-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:127-151
-129            android:launchMode="singleInstance"
-129-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:204-239
-130            android:process=":playcore_missing_splits_activity"
-130-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:152-203
-131            android:stateNotNeeded="true" />
-131-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:12:240-269
-132        <activity
-132-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:5-226
-133            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
-133-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:15-95
-134            android:enabled="false"
-134-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:96-119
-135            android:exported="false"
-135-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:120-144
-136            android:stateNotNeeded="true"
-136-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:145-174
-137            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The service will be merged into the manifest of the hosting app. -->
-137-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:13:175-224
-138        <service
-138-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:16:5-145
-139            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
-139-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:16:14-95
-140            android:enabled="false"
-140-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:16:96-119
-141            android:exported="true" />
-141-->[com.google.android.play:core:1.8.0] /Users/umittunc/.gradle/caches/8.9/transforms/48bc6e99b0767a2f21d3d21acc1f0a5c/transformed/jetified-core-1.8.0/AndroidManifest.xml:16:120-143
-142    </application>
-143
-144</manifest>
+37
+38    <application
+39        android:name="android.app.Application"
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="true"
+43        android:icon="@mipmap/ic_launcher"
+44        android:label="Parabol"
+45        android:usesCleartextTraffic="true" >
+46        <activity
+47            android:name="com.truncgil.parabol.MainActivity"
+48            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+49            android:exported="true"
+50            android:hardwareAccelerated="true"
+51            android:launchMode="singleTop"
+52            android:taskAffinity=""
+53            android:theme="@style/LaunchTheme"
+54            android:windowSoftInputMode="adjustResize" >
+55
+56            <!--
+57                 Specifies an Android theme to apply to this Activity as soon as
+58                 the Android process has started. This theme is visible to the user
+59                 while the Flutter UI initializes. After that, this theme continues
+60                 to determine the Window background behind the Flutter UI.
+61            -->
+62            <meta-data
+63                android:name="io.flutter.embedding.android.NormalTheme"
+64                android:resource="@style/NormalTheme" />
+65
+66            <intent-filter>
+67                <action android:name="android.intent.action.MAIN" />
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+70            </intent-filter>
+71        </activity>
+72        <!--
+73             Don't delete the meta-data below.
+74             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+75        -->
+76        <meta-data
+77            android:name="flutterEmbedding"
+78            android:value="2" />
+79
+80        <activity
+80-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-11:74
+81            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+81-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-74
+82            android:exported="false"
+82-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-37
+83            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+83-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-71
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:18.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:18.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:18.1.0] /Users/umittunc/.gradle/caches/8.9/transforms/4b0ee7415383878e552081e3bebd4a2e/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+88
+89        <uses-library
+89-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+90            android:name="androidx.window.extensions"
+90-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+91            android:required="false" />
+91-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+92        <uses-library
+92-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+93            android:name="androidx.window.sidecar"
+93-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+94            android:required="false" />
+94-->[androidx.window:window:1.2.0] /Users/umittunc/.gradle/caches/8.9/transforms/1ba61104084814d0032d4cafab8f40cc/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+95
+96        <provider
+96-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+97            android:name="androidx.startup.InitializationProvider"
+97-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+98            android:authorities="com.truncgil.parabol.androidx-startup"
+98-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+99            android:exported="false" >
+99-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+100            <meta-data
+100-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+101-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+102                android:value="androidx.startup" />
+102-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/umittunc/.gradle/caches/8.9/transforms/0d3f969677e5cc0d5540db45508611b8/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+103            <meta-data
+103-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+105                android:value="androidx.startup" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+106        </provider>
+107
+108        <receiver
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+109            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+109-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+110            android:directBootAware="false"
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+111            android:enabled="true"
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+112            android:exported="true"
+112-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+113            android:permission="android.permission.DUMP" >
+113-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+114            <intent-filter>
+114-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+115                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+115-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+116            </intent-filter>
+117            <intent-filter>
+117-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+118                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+118-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+119            </intent-filter>
+120            <intent-filter>
+120-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+121                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+121-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+122            </intent-filter>
+123            <intent-filter>
+123-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+124                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+124-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/umittunc/.gradle/caches/8.9/transforms/9b9684a64b4cad7b8d9f4b2ee8801416/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+125            </intent-filter>
+126        </receiver> <!-- The activities will be merged into the manifest of the hosting app. -->
+127        <activity
+127-->[com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:14:9-18:65
+128            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+128-->[com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:15:13-93
+129            android:exported="false"
+129-->[com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:16:13-37
+130            android:stateNotNeeded="true"
+130-->[com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:17:13-42
+131            android:theme="@style/Theme.PlayCore.Transparent" />
+131-->[com.google.android.play:core-common:2.0.3] /Users/umittunc/.gradle/caches/8.9/transforms/1ac094d616047be32bfa5b8ea3742045/transformed/jetified-core-common-2.0.3/AndroidManifest.xml:18:13-62
+132    </application>
+133
+134</manifest>

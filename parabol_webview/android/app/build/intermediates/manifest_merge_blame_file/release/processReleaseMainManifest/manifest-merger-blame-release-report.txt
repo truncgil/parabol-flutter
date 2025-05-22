@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="35" />
 10    <!-- Internet izinleri -->
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:5-66
-11-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:4:22-64
+11-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-66
+11-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:5-78
-12-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:5:22-76
+12-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:5-78
+12-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:6:22-76
 13    <!--
 14         Required to query activities that can process text, see:
 15         https://developer.android.com/training/package-visibility and
@@ -22,16 +22,16 @@
 18         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
 19    -->
 20    <queries>
-20-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:45:5-50:15
+20-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:5-51:15
 21        <intent>
-21-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:46:9-49:18
+21-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:9-50:18
 22            <action android:name="android.intent.action.PROCESS_TEXT" />
-22-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:13-72
-22-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:47:21-70
+22-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-72
+22-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:21-70
 23
 24            <data android:mimeType="text/plain" />
-24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:13-50
-24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:48:19-48
+24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:13-50
+24-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:49:19-48
 25        </intent>
 26    </queries>
 27
@@ -48,34 +48,34 @@
 33
 34    <application
 35        android:name="android.app.Application"
-35-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:9:9-42
+35-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:10:9-42
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 36-->[androidx.core:core:1.13.1] /Users/umittunc/.gradle/caches/8.9/transforms/f93b2eda4f0fc952a74c0152c6571274/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 37        android:extractNativeLibs="true"
 38        android:icon="@mipmap/ic_launcher"
-38-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:10:9-43
+38-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:11:9-43
 39        android:label="Parabol"
-39-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:8:9-32
+39-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:9:9-32
 40        android:usesCleartextTraffic="true" >
-40-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:11:9-44
+40-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:12:9-44
 41        <activity
-41-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:12:9-33:20
+41-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:13:9-34:20
 42            android:name="com.truncgil.parabol.MainActivity"
-42-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:13:13-41
+42-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:14:13-41
 43            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-43-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:18:13-163
+43-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:19:13-163
 44            android:exported="true"
-44-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:14:13-36
+44-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:15:13-36
 45            android:hardwareAccelerated="true"
-45-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:19:13-47
+45-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:20:13-47
 46            android:launchMode="singleTop"
-46-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:15:13-43
+46-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:16:13-43
 47            android:taskAffinity=""
-47-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:16:13-36
+47-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:17:13-36
 48            android:theme="@style/LaunchTheme"
-48-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:17:13-47
+48-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:18:13-47
 49            android:windowSoftInputMode="adjustResize" >
-49-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:20:13-55
+49-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:21:13-55
 50
 51            <!--
 52                 Specifies an Android theme to apply to this Activity as soon as
@@ -84,21 +84,21 @@
 55                 to determine the Window background behind the Flutter UI.
 56            -->
 57            <meta-data
-57-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:25:13-28:17
+57-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:26:13-29:17
 58                android:name="io.flutter.embedding.android.NormalTheme"
-58-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:26:15-70
+58-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:27:15-70
 59                android:resource="@style/NormalTheme" />
-59-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:27:15-52
+59-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:28:15-52
 60
 61            <intent-filter>
-61-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:29:13-32:29
+61-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:13-33:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:17-68
-62-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:30:25-66
+62-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:17-68
+62-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:17-76
-64-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:31:27-74
+64-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:32:17-76
+64-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:32:27-74
 65            </intent-filter>
 66        </activity>
 67        <!--
@@ -106,11 +106,11 @@
 69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 70        -->
 71        <meta-data
-71-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:36:9-38:33
+71-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:37:9-39:33
 72            android:name="flutterEmbedding"
-72-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:37:13-44
+72-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:38:13-44
 73            android:value="2" />
-73-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:38:13-30
+73-->/Users/umittunc/Desktop/Works/flutter_dev/parabol/parabol_webview/android/app/src/main/AndroidManifest.xml:39:13-30
 74
 75        <activity
 75-->[:url_launcher_android] /Users/umittunc/.pub-cache/hosted/pub.dev/url_launcher_android-6.3.16/android/build/intermediates/merged_manifest/release/processReleaseManifest/AndroidManifest.xml:8:9-11:74

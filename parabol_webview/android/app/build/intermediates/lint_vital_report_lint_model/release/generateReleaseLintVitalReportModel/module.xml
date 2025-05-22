@@ -7,8 +7,9 @@
     agpVersion="8.7.0"
     buildFolder="build"
     bootClassPath="/Users/umittunc/Library/Android/sdk/platforms/android-35/android.jar:/Users/umittunc/Library/Android/sdk/build-tools/34.0.0/core-lambda-stubs.jar"
-    javaSourceLevel="17"
-    compileTarget="android-35">
+    javaSourceLevel="1.8"
+    compileTarget="android-35"
+    neverShrinking="true">
   <lintOptions
       abortOnError="true"
       absolutePaths="true"

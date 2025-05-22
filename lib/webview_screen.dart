@@ -28,6 +28,9 @@ class _WebViewScreenState extends State<WebViewScreen> {
 
     await controller.setJavaScriptMode(JavaScriptMode.unrestricted);
 
+    // Güvenlik ayarları
+    await controller.setBackgroundColor(const Color(0xFF265AA5));
+    await controller.enableZoom(false);
     await controller.setNavigationDelegate(
       NavigationDelegate(
         onPageStarted: (String url) {
@@ -52,12 +55,8 @@ class _WebViewScreenState extends State<WebViewScreen> {
         },
         onNavigationRequest: (NavigationRequest request) {
           print('Navigation request: ${request.url}');
-          if (!request.url.contains('parabol.truncgil.com') &&
-              !request.url.contains('about:blank')) {
-            launchUrl(
-              Uri.parse(request.url),
-              mode: LaunchMode.externalApplication,
-            );
+          if (!request.url.contains('parabol.truncgil.com')) {
+            print('Engellenen URL: ${request.url}');
             return NavigationDecision.prevent;
           }
           return NavigationDecision.navigate;
@@ -116,8 +115,12 @@ class _WebViewScreenState extends State<WebViewScreen> {
         return true;
       },
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color(0xFF265AA5),
         body: SafeArea(
+          top: true,
+          bottom: false,
+          left: false,
+          right: false,
           child: Stack(
             children: [
               WebViewWidget(
@@ -125,7 +128,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
               ),
               if (isLoading)
                 const Center(
-                  child: SpinKitCircle(color: Colors.blue, size: 50.0),
+                  child: SpinKitCircle(color: Colors.white, size: 50.0),
                 ),
               if (hasError)
                 Center(
@@ -134,15 +137,20 @@ class _WebViewScreenState extends State<WebViewScreen> {
                     children: [
                       const Text(
                         'Sayfa yüklenirken bir hata oluştu',
-                        style: TextStyle(fontSize: 16),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
                       ),
                       const SizedBox(height: 10),
                       Text(
                         'URL: $initialUrl',
-                        style: const TextStyle(fontSize: 12),
+                        style:
+                            const TextStyle(fontSize: 12, color: Colors.white),
                       ),
                       const SizedBox(height: 20),
                       ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Color(0xFF265AA5),
+                        ),
                         onPressed: reloadPage,
                         child: const Text('Tekrar Dene'),
                       ),

@@ -9,8 +9,17 @@ void main() {
 
   // Tam ekran modunu etkinleştir
   SystemChrome.setEnabledSystemUIMode(
-    SystemUiMode.immersiveSticky,
-    overlays: [],
+    SystemUiMode.edgeToEdge,
+    overlays: [SystemUiOverlay.top],
+  );
+
+  // Durum çubuğunu beyaz yap
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
+      statusBarBrightness: Brightness.dark,
+    ),
   );
 
   // Yalnızca dikey yönlendirmeyi zorla
@@ -32,6 +41,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColor: const Color(0xFF265AA5),
+        scaffoldBackgroundColor: const Color(0xFF265AA5),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: const SplashScreen(),
@@ -74,12 +85,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF265AA5),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const SpinKitFadingCircle(
-              color: Colors.blue,
+              color: Colors.white,
               size: 50.0,
             ),
             const SizedBox(height: 20),
@@ -87,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen> {
               _isConnected
                   ? 'Yükleniyor...'
                   : 'İnternet bağlantısı bekleniyor...',
-              style: const TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16, color: Colors.white),
             ),
             if (!_isConnected) ...[
               const SizedBox(height: 20),
